@@ -1,0 +1,151 @@
+TransactionId,DivisionId,StateAb,DivisionNm,DivisionAb,Enrolment,Demographic,Nominations
+20499,179,SA,Adelaide,ADEL,109211,Inner Metropolitan,7
+20499,197,VIC,Aston,ASTO,96010,Outer Metropolitan,7
+20499,198,VIC,Ballarat,BALL,110793,Provincial,8
+20499,103,NSW,Banks,BANK,104959,Inner Metropolitan,7
+20499,180,SA,Barker,BARK,105648,Rural,5
+20499,104,NSW,Barton,BART,106566,Inner Metropolitan,6
+20499,192,TAS,Bass,BASS,73591,Provincial,6
+20499,199,VIC,Batman,BATM,108942,Inner Metropolitan,11
+20499,200,VIC,Bendigo,BEND,109615,Provincial,8
+20499,105,NSW,Bennelong,BENN,106005,Inner Metropolitan,7
+20499,106,NSW,Berowra,BERO,105292,Outer Metropolitan,7
+20499,304,QLD,Blair,BLAI,98427,Provincial,8
+20499,107,NSW,Blaxland,BLAX,103539,Inner Metropolitan,5
+20499,310,QLD,Bonner,BONN,100853,Outer Metropolitan,6
+20499,182,SA,Boothby,BOOT,107323,Outer Metropolitan,8
+20499,155,QLD,Bowman,BOWM,103551,Outer Metropolitan,5
+20499,193,TAS,Braddon,BRAD,72519,Rural,7
+20499,108,NSW,Bradfield,BRFD,105735,Inner Metropolitan,6
+20499,235,WA,Brand,BRAN,98113,Outer Metropolitan,5
+20499,156,QLD,Brisbane,BRIS,106958,Inner Metropolitan,6
+20499,201,VIC,Bruce,BRUC,96716,Outer Metropolitan,7
+20499,317,WA,Burt,BURT,99572,Outer Metropolitan,5
+20499,109,NSW,Calare,CALA,113025,Rural,7
+20499,203,VIC,Calwell,CALW,109370,Outer Metropolitan,5
+20499,101,ACT,Canberra,CANB,143279,Inner Metropolitan,4
+20499,236,WA,Canning,CANN,99006,Outer Metropolitan,5
+20499,157,QLD,Capricornia,CAPR,98233,Provincial,6
+20499,204,VIC,Casey,CASE,102919,Rural,6
+20499,111,NSW,Chifley,CHIF,103908,Outer Metropolitan,5
+20499,205,VIC,Chisholm,CHIS,97434,Inner Metropolitan,6
+20499,112,NSW,Cook,COOK,104432,Inner Metropolitan,5
+20499,207,VIC,Corangamite,CORA,110297,Provincial,10
+20499,208,VIC,Corio,CORI,107782,Provincial,7
+20499,237,WA,Cowan,COWA,96251,Outer Metropolitan,7
+20499,113,NSW,Cowper,COWP,118388,Rural,7
+20499,114,NSW,Cunningham,CUNN,111395,Provincial,6
+20499,238,WA,Curtin,CURT,97615,Inner Metropolitan,5
+20499,158,QLD,Dawson,DAWS,103654,Rural,7
+20499,209,VIC,Deakin,DEAK,99675,Outer Metropolitan,6
+20499,194,TAS,Denison,DENI,74020,Inner Metropolitan,6
+20499,252,QLD,Dickson,DICK,100720,Outer Metropolitan,6
+20499,115,NSW,Dobell,DOBE,111736,Provincial,7
+20499,210,VIC,Dunkley,DUNK,104967,Outer Metropolitan,11
+20499,312,WA,Durack,DURA,97347,Rural,6
+20499,117,NSW,Eden-Monaro,EMON,107887,Rural,9
+20499,159,QLD,Fadden,FADD,104729,Outer Metropolitan,6
+20499,160,QLD,Fairfax,FAIR,108276,Rural,8
+20499,118,NSW,Farrer,FARR,111466,Rural,7
+20499,102,ACT,Fenner,FENN,138847,Inner Metropolitan,5
+20499,161,QLD,Fisher,FISH,98637,Rural,9
+20499,211,VIC,Flinders,FLIN,115356,Rural,6
+20499,311,QLD,Flynn,FLYN,100660,Rural,9
+20499,162,QLD,Forde,FORD,99091,Outer Metropolitan,6
+20499,239,WA,Forrest,FORR,100341,Rural,8
+20499,119,NSW,Fowler,FOWL,105483,Outer Metropolitan,5
+20499,195,TAS,Franklin,FRAN,76797,Outer Metropolitan,5
+20499,240,WA,Fremantle,FREM,99631,Inner Metropolitan,5
+20499,212,VIC,Gellibrand,GELL,108402,Inner Metropolitan,4
+20499,120,NSW,Gilmore,GILM,115984,Rural,4
+20499,213,VIC,Gippsland,GIPP,104082,Rural,10
+20499,214,VIC,Goldstein,GOLD,104931,Inner Metropolitan,6
+20499,309,VIC,Gorton,GORT,115937,Outer Metropolitan,3
+20499,121,NSW,Grayndler,GRAY,105605,Inner Metropolitan,11
+20499,122,NSW,Greenway,GREE,104410,Outer Metropolitan,8
+20499,183,SA,Grey,GREY,102071,Rural,6
+20499,163,QLD,Griffith,GRIF,105841,Outer Metropolitan,8
+20499,164,QLD,Groom,GROO,101600,Provincial,5
+20499,305,WA,Hasluck,HASL,95402,Outer Metropolitan,5
+20499,165,QLD,Herbert,HERB,104841,Provincial,9
+20499,215,VIC,Higgins,HIGG,104615,Inner Metropolitan,8
+20499,185,SA,Hindmarsh,HIND,111702,Inner Metropolitan,7
+20499,166,QLD,Hinkler,HINK,100798,Provincial,7
+20499,216,VIC,Holt,HOLT,116262,Outer Metropolitan,5
+20499,217,VIC,Hotham,HOTH,100010,Inner Metropolitan,6
+20499,124,NSW,Hughes,HUGH,104456,Outer Metropolitan,5
+20499,125,NSW,Hume,HUME,107211,Provincial,6
+20499,126,NSW,Hunter,HUNT,113469,Rural,8
+20499,218,VIC,Indi,INDI,103784,Rural,10
+20499,219,VIC,Isaacs,ISAA,105722,Outer Metropolitan,4
+20499,220,VIC,Jagajaga,JAGA,103112,Inner Metropolitan,5
+20499,167,QLD,Kennedy,KENN,99965,Rural,5
+20499,127,NSW,Kingsford Smith,KSMI,108701,Inner Metropolitan,5
+20499,186,SA,Kingston,KING,105676,Outer Metropolitan,5
+20499,221,VIC,Kooyong,KOOY,100108,Inner Metropolitan,4
+20499,223,VIC,La Trobe,LTRO,105692,Outer Metropolitan,10
+20499,222,VIC,Lalor,LALO,123571,Outer Metropolitan,5
+20499,168,QLD,Leichhardt,LEIC,109096,Rural,9
+20499,169,QLD,Lilley,LILL,107004,Inner Metropolitan,5
+20499,128,NSW,Lindsay,LIND,109779,Outer Metropolitan,11
+20499,306,NT,Lingiari,LING,63082,Rural,9
+20499,302,QLD,Longman,LONG,105120,Provincial,11
+20499,130,NSW,Lyne,LYNE,111908,Rural,6
+20499,196,TAS,Lyons,LYON,76657,Rural,6
+20499,131,NSW,Macarthur,MACA,104893,Outer Metropolitan,5
+20499,132,NSW,Mackellar,MACK,108319,Outer Metropolitan,7
+20499,133,NSW,Macquarie,MACQ,104816,Provincial,9
+20499,187,SA,Makin,MAKI,107108,Outer Metropolitan,7
+20499,224,VIC,Mallee,MALL,99329,Rural,5
+20499,170,QLD,Maranoa,MARA,102861,Rural,8
+20499,225,VIC,Maribyrnong,MARI,110313,Inner Metropolitan,6
+20499,188,SA,Mayo,MAYO,103967,Rural,6
+20499,226,VIC,McEwen,MCEW,130591,Rural,9
+20499,315,NSW,McMahon,MCMA,106231,Outer Metropolitan,6
+20499,227,VIC,McMillan,MCMI,116179,Rural,8
+20499,171,QLD,McPherson,MCPH,103754,Provincial,5
+20499,228,VIC,Melbourne,MELB,111628,Inner Metropolitan,6
+20499,230,VIC,Melbourne Ports,MPOR,102186,Inner Metropolitan,8
+20499,229,VIC,Menzies,MENZ,99170,Outer Metropolitan,8
+20499,134,NSW,Mitchell,MITC,102453,Outer Metropolitan,4
+20499,172,QLD,Moncrieff,MONC,102971,Provincial,4
+20499,242,WA,Moore,MOOR,99916,Outer Metropolitan,4
+20499,173,QLD,Moreton,MORE,97820,Inner Metropolitan,7
+20499,231,VIC,Murray,MURR,104430,Rural,11
+20499,135,NSW,New England,NENG,109580,Rural,10
+20499,136,NSW,Newcastle,NEWC,113386,Provincial,7
+20499,137,NSW,North Sydney,NSYD,107083,Inner Metropolitan,8
+20499,243,WA,O'Connor,OCON,101914,Rural,6
+20499,174,QLD,Oxley,OXLE,95008,Outer Metropolitan,6
+20499,138,NSW,Page,PAGE,117317,Rural,6
+20499,139,NSW,Parkes,PARK,107445,Rural,5
+20499,140,NSW,Parramatta,PARR,101574,Inner Metropolitan,8
+20499,249,NSW,Paterson,PATE,112575,Provincial,7
+20499,244,WA,Pearce,PEAR,104451,Outer Metropolitan,5
+20499,245,WA,Perth,PERT,98758,Inner Metropolitan,5
+20499,175,QLD,Petrie,PETR,105492,Outer Metropolitan,6
+20499,189,SA,Port Adelaide,PADE,113342,Inner Metropolitan,7
+20499,176,QLD,Rankin,RANK,101760,Outer Metropolitan,7
+20499,144,NSW,Reid,REID,105496,Inner Metropolitan,5
+20499,145,NSW,Richmond,RICH,112820,Rural,6
+20499,250,NSW,Riverina,RIVE,111108,Rural,6
+20499,146,NSW,Robertson,ROBE,108509,Provincial,7
+20499,177,QLD,Ryan,RYAN,105044,Outer Metropolitan,6
+20499,232,VIC,Scullin,SCUL,110539,Outer Metropolitan,5
+20499,148,NSW,Shortland,SHOR,110159,Provincial,4
+20499,307,NT,Solomon,SOLO,69938,Inner Metropolitan,11
+20499,246,WA,Stirling,STIR,98634,Inner Metropolitan,6
+20499,190,SA,Sturt,STUR,104764,Inner Metropolitan,7
+20499,247,WA,Swan,SWAN,97400,Inner Metropolitan,4
+20499,149,NSW,Sydney,SYDN,110322,Inner Metropolitan,10
+20499,248,WA,Tangney,TANG,94111,Inner Metropolitan,5
+20499,191,SA,Wakefield,WAKE,112237,Rural,7
+20499,233,VIC,Wannon,WANN,99213,Rural,5
+20499,151,NSW,Warringah,WARR,102711,Inner Metropolitan,10
+20499,251,NSW,Watson,WATS,105488,Inner Metropolitan,6
+20499,152,NSW,Wentworth,WENT,102811,Inner Metropolitan,8
+20499,153,NSW,Werriwa,WERR,108593,Outer Metropolitan,4
+20499,150,NSW,Whitlam,WHIT,112143,Provincial,6
+20499,178,QLD,Wide Bay,WBAY,102910,Rural,7
+20499,234,VIC,Wills,WILL,113856,Inner Metropolitan,10
+20499,316,QLD,Wright,WRIG,100035,Rural,7
