@@ -5,6 +5,8 @@ import HomePage from './components/Home/HomePage';
 import AboutPage from './components/About/AboutPage';
 import MembersPage from './components/members/MembersPage';
 import ElectoratesPage from './components/electorates/ElectoratesPage';
+import ElectoratePage from './components/electorates/ElectoratePage';
+
 
 export default (
   <Route path="/" component={App}>
@@ -12,6 +14,7 @@ export default (
     <Route path="members" component={MembersPage} />
     <Route path="about" component={AboutPage} />
     <Route path="electorates" component={ElectoratesPage} />
+    <Route path="electorate/:state/:divisionName/:divisionId" component={ElectoratePage} />
   </Route>
 );
 

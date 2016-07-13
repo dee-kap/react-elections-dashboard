@@ -1,13 +1,65 @@
-#app {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #4d4d4d;
-  margin: 0 auto;
+.container-main {
+  margin-top: 75px;
 }
 
-a.active  {
-  color: orange;
+.cards-container ul {
+  list-style: none;
 }
 
-nav {
-  padding-top: 20px;
+.some-color {
+  background-color: #d8d8d8;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.votes-bar-container {
+  height: 40px;
+  background-color: #eee;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  max-width: 100%;
+  opacity: 0.5;
+  transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -ms-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+  -webkit-transition: width 0.2s ease-out;
+}
+
+.votes-bar-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  display: inlineblock;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,54 +1,82 @@
 import React, { Component } from 'react';
+import ElectoratesTable from './ElectoratesTable';
+import ElectoratesToolbar from './ElectoratesToolbar';
+import ElectorateSelector from './ElectorateSelector';
+import ElectorateCardsContainer from './ElectorateCardsContainer';
+
 
 export class ElectoralsPage extends Component {
 
   constructor() {
     super();
-    this.state = {electorates: []};
-    this.getElectorates = this._getElectorates.bind(this);
+    this.state = {electorates: [], displayCards: true, selectedState: ''};
+    this.getElectorates = this.getElectorates.bind(this);
+    this.onStateSelect = this.onStateSelect.bind(this);
+    this.onDisplayCards = this.onDisplayCards.bind(this);
+    this.onDisplayTable = this.onDisplayTable.bind(this);
   }
 
-  _getElectorates() {
+  getElectorates(state) {
     $.get('https://elec-960cb.firebaseio.com/electorates.json', (data) => {
-      this.setState({electorates: data});
+
+      if(state) {
+        let filteredElectorates = data.filter((item) => {
+          return item.StateAb === state;
+        });
+        this.setState({electorates: filteredElectorates});
+      } else {
+        this.setState({electorates: data});
+      }
     });
+  }
+
+  onStateSelect(state) {
+    this.getElectorates(state);
+    this.setState({selectedState: state});
+  }
+
+  onElectorateSelect(divisionId) {
+
+  }
+
+  onDisplayCards() {
+    console.log('onDisplayCards');
+    this.setState({displayCards: true});
+  }
+
+  onDisplayTable() {
+    console.log('onDisplayTable');
+    this.setState({displayCards: false});
   }
 
   render() {
-    this.getElectorates();
-    const electorates = this.state.electorates.map(function(e, index) {
-      return (
-          <tr key={index}>
-            <td>{index + 1}</td>
-            <td>{e.StateAb}</td>
-            <td>{e.DivisionNm}</td>
-            <td>{e.Nominations}</td>
-            <td>{e.Enrolment}</td>
-          </tr>
-        );
 
-    });
+    let dataView = (<ElectorateCardsContainer 
+      electorates={this.state.electorates} />);
 
-    return (
+    if (!this.state.displayCards) {
+      dataView = (<ElectoratesTable 
+        electorates={this.state.electorates} />);
+    }
+
+
+    return(
       <div>
-      <table className="table table-striped">
-          <thead>
-              <tr>
-                  <th>#</th>
-                  <th>State</th>
-                  <th>Division</th>
-                  <th>Nominations</th>
-                  <th>Enrolments</th>
-              </tr>
-          </thead>
-          <tbody>
-              {electorates}
-          </tbody>
-      </table>
+        <ElectoratesToolbar onStateSelect={this.onStateSelect} 
+          onElectorateSelect={this.onElectorateSelect} 
+          onDisplayCards={this.onDisplayCards}
+          onDisplayTable={this.onDisplayTable}
+          electorates={this.state.electorates}
+          selectedState={this.state.selectedState} />
+        <div>
+          <hr/>
+          {dataView}
+        </div>
       </div>
-
-
     );
+    
+
+    
   }
 }
 
