@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nominations from './Nominations';
 import ElectorateSelector from './ElectorateSelector';
+import ResultsLegend from '../common/ResultsLegend';
 
 export class ElectoratePage extends Component {
 
@@ -40,8 +41,8 @@ export class ElectoratePage extends Component {
       <div>
       
         <h1>Electorate of {this.state.division.DivisionNm} {this.state.division.StateAb} Number of voters enrolled: {this.state.division.Enrolment}</h1>
-        <div className="col-md-4 center">Nominations</div>
-        <div className="center">Results</div>
+        <div className="col-md-4 center">Candidates</div>
+        <div className="center">Results<ResultsLegend /> </div>
 
         <Nominations division={this.state.division} />
       </div>

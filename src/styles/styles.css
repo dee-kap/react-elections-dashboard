@@ -26,28 +26,20 @@
   text-align: center;
 }
 
+.bg-brown {
+  background-color: #D6CDC8;
+}
+
 .votes-bar-container {
   height: 40px;
   background-color: #eee;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 10px;
 }
 
-.bar {
-  position: absolute;
-  top: 0;
-  left: 0;
+.votes-bar {
+  float: left;
   height: 40px;
-  max-width: 100%;
-  opacity: 0.5;
-  transition: width 0.2s ease-out;
-  -moz-transition: width 0.2s ease-out;
-  -ms-transition: width 0.2s ease-out;
-  -o-transition: width 0.2s ease-out;
-  -webkit-transition: width 0.2s ease-out;
 }
 
 .votes-bar-text {
@@ -62,4 +54,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.legend-container {
+  margin-left: 20px;
+}
+
+.legend-square {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.legend-text {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 0.7em;
 }

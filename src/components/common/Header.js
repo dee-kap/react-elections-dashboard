@@ -5,16 +5,11 @@ const Header = () => {
   return (
     <div className="navbar navbar-default navbar-fixed-top">
       <div className="container">
-        <div className="navbar-header">
-          <IndexLink to="/" activeClassName="active">Home</IndexLink>
-          <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-          </button>
-        </div>
         <div className="navbar-collapse collapse" id="navbar-main">
           <ul className="nav navbar-nav">
+          <li>
+              <IndexLink to="/" activeClassName="active">Home</IndexLink>
+            </li>
             <li>
               <Link to="/members" activeClassName="active">Members</Link>
             </li>
