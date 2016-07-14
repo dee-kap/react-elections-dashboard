@@ -26,6 +26,15 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.electorate-candidate-container {
+  text-align: right;
+  margin-top: 5px;
+}
+
 .bg-brown {
   background-color: #D6CDC8;
 }
@@ -70,4 +79,8 @@
   display: inline-block;
   margin-right: 15px;
   font-size: 0.7em;
+}
+
+.electorate-title-container {
+  margin-bottom: 20px;
 }

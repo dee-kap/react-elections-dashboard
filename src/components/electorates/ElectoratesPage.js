@@ -31,6 +31,7 @@ export class ElectoralsPage extends Component {
   }
 
   onStateSelect(state) {
+    this.setState({electorates: []});
     this.getElectorates(state);
     this.setState({selectedState: state});
   }

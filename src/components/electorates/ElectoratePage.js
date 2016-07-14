@@ -5,10 +5,6 @@ import ResultsLegend from '../common/ResultsLegend';
 
 export class ElectoratePage extends Component {
 
-  // write code to fetch electorate data based on id
-  // then  use the data to populate this page
-
-
   constructor(props) {
     super();
     this.state = {division: {}};
@@ -40,9 +36,15 @@ export class ElectoratePage extends Component {
     return (
       <div>
       
-        <h1>Electorate of {this.state.division.DivisionNm} {this.state.division.StateAb} Number of voters enrolled: {this.state.division.Enrolment}</h1>
-        <div className="col-md-4 center">Candidates</div>
-        <div className="center">Results<ResultsLegend /> </div>
+        <div className="electorate-title-container">
+        <h1>{this.state.division.DivisionNm} {this.state.division.StateAb}</h1>
+        <h2>Number of voters enrolled: {this.state.division.Enrolment}</h2>
+        <hr/>
+        <div>
+          <div className="col-md-4 text-right text-muted">Candidates</div>
+          <div className="center text-muted">Results<ResultsLegend /> </div>
+        </div>
+        </div>
 
         <Nominations division={this.state.division} />
       </div>

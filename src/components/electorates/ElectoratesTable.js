@@ -18,7 +18,8 @@ export class ElectoratesTable extends Component {
   render() {
     const electorates = this.props.electorates.map((e, index) => {
       return (
-          <tr key={index} onClick={()=>{this.goToElectorate(e.StateAb, e.DivisionNm, e.DivisionId)}}>
+          <tr key={index} 
+            onClick={()=>{this.goToElectorate(e.StateAb, e.DivisionNm, e.DivisionId)}}>
             <td>{index + 1}</td>
             <td>{e.StateAb}</td>
             <td>{e.DivisionNm}</td>

@@ -11,7 +11,7 @@ const Header = () => {
               <IndexLink to="/" activeClassName="active">Home</IndexLink>
             </li>
             <li>
-              <Link to="/members" activeClassName="active">Members</Link>
+              <Link to="/members" activeClassName="active">Candidates</Link>
             </li>
             <li>
               <Link to="/electorates" activeClassName="active">Electorates</Link>

@@ -36,9 +36,9 @@ export class Nominations extends Component {
         <li className="list-group-item">
           <div className="media">
             <div className="media-body">
-              <div className="col-md-4">
+              <div className="col-md-4 electorate-candidate-container">
               <h4 className="media-heading">{candidate.GivenNm} {candidate.Surname}</h4>
-              <h5>Party: {candidate.PartyNm} </h5>
+              <h5>{candidate.PartyNm} </h5>
               </div>
               <div className="col-md-8">
               First preference:  <ResultFirstPreferenceByCandidate candidate={candidate} />
