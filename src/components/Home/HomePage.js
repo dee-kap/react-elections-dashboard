@@ -5,9 +5,8 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className="jumbotron">
-        <h1>...</h1>
-        <p>React, Redux and React s Router in ES6 for ultra-response web apps.</p>
-        <Link to="about" className="btn btn-primary btn-lg">Learn More</Link>
+        <h1>Australian elections 2016</h1>
+        <h2>House Candidates and their results</h2>
       </div>
     );
   }
