@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 
 
 export class ElectorateCard extends Component {
@@ -12,7 +12,7 @@ export class ElectorateCard extends Component {
 
   gotToElectorate(state, divisionName, divisionId) {
     const path = `/electorate/${state}/${divisionName}/${divisionId}`;
-    browserHistory.push(path);
+    hashHistory.push(path);
   }
 
   render() {
@@ -21,8 +21,8 @@ export class ElectorateCard extends Component {
 
     return (
       <div className="col-md-4">
-        <div className="panel panel-info">
-          <div className="panel-heading" onClick={()=>{this.goToElectorate(electorate.StateAb, electorate.DivisionNm, electorate.DivisionId)}}>
+        <div className="panel panel-info pointer" onClick={()=>{this.goToElectorate(electorate.StateAb, electorate.DivisionNm, electorate.DivisionId)}}>
+          <div className="panel-heading">
             <h3 className="panel-title">{electorate.DivisionNm} {electorate.StateAb}</h3>
           </div>
           <div className="panel-body">

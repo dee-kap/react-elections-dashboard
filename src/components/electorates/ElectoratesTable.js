@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 
 
 export class ElectoratesTable extends Component {
@@ -12,13 +12,14 @@ export class ElectoratesTable extends Component {
 
   gotToElectorate(state, divisionName, divisionId) {
     const path = `/electorate/${state}/${divisionName}/${divisionId}`;
-    browserHistory.push(path);
+    hashHistory.push(path);
   }
 
   render() {
     const electorates = this.props.electorates.map((e, index) => {
       return (
           <tr key={index} 
+            className="pointer"
             onClick={()=>{this.goToElectorate(e.StateAb, e.DivisionNm, e.DivisionId)}}>
             <td>{index + 1}</td>
             <td>{e.StateAb}</td>
