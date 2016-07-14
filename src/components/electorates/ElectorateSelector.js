@@ -56,7 +56,7 @@ export class ElectorateSelector extends Component {
                 {states}
               </SplitButton>
           </div>
-          <div className="btn-group" role="group" aria-label="Second group">
+          <div className="btn-group none" role="group" aria-label="Second group">
           <SplitButton bsStyle={'Default'.toLowerCase()} title={'Select Electorate'} 
                 onSelect={this.props.onElectorateSelect}>
                 {electorates}

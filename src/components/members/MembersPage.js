@@ -5,18 +5,19 @@ export class MembersPage extends Component {
   constructor() {
     super();
     this.state = {members: []};
-    this.getMember = this._getMembers.bind(this);
+    this.getMembers = this.getMembers.bind(this);
   }
 
-  _getMembers() {
+  getMembers(search) {
     $.get('https://elec-960cb.firebaseio.com/housecandidates.json', (data) => {
-      this.setState({members: data});
+      if(!search) {
+        this.setState({members: data.slice(0, 25)});
+      }
     });
-
   }
 
 	render() {
-    this.getMember();
+    this.getMembers();
     const members = this.state.members.map(function(m, index) {
       return (
           <tr key={index}>
@@ -31,7 +32,6 @@ export class MembersPage extends Component {
 
 		return (
 			<div>
-        <h1>Members</h1>
         <table className="table table-striped">
           <thead>
               <tr>

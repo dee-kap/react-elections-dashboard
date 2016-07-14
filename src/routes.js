@@ -11,7 +11,7 @@ import ElectoratePage from './components/electorates/ElectoratePage';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage} />
-    <Route path="members" component={MembersPage} />
+    <Route path="candidates" component={MembersPage} />
     <Route path="about" component={AboutPage} />
     <Route path="electorates" component={ElectoratesPage} />
     <Route path="electorate/:state/:divisionName/:divisionId" component={ElectoratePage} />
