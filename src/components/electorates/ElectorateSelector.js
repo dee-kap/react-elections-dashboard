@@ -46,7 +46,6 @@ export class ElectorateSelector extends Component {
     }
 
     return (
-
       <div className="btn-toolbar inline-block" role="toolbar" 
         aria-label="Toolbar with button groups">
           <div className="btn-group" role="group" aria-label="First group">
@@ -63,11 +62,17 @@ export class ElectorateSelector extends Component {
               </SplitButton>
           </div>
       </div>
-
     );
 
   }
 }
+
+ElectorateSelector.propTypes =  {
+  electorates: React.PropTypes.array,
+  selectedState: React.PropTypes.string,
+  onStateSelect: React.PropTypes.func,
+  onElectorateSelect: React.PropTypes.func
+};
 
 
 export default ElectorateSelector;

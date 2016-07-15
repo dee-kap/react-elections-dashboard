@@ -28,25 +28,11 @@ export class ResultTwoPartyPreferredByCandidate extends Component {
   render() {
     let votes = this.state.votes;
 
-
-  
     let ordinaryVotesWidth = ((votes.OrdinaryVotes / votes.TotalVotes) * 100) + '%';
     let postalVotesWidth = ((votes.PostalVotes / votes.TotalVotes) * 100) + '%';
     let prePollVotesWidth = ((votes.PrePollVotes / votes.TotalVotes) * 100) + '%';
     let provisionalVotesWidth = ((votes.ProvisionalVotes / votes.TotalVotes) * 100) + '%';
     let absentVotesWidth = ((votes.AbsentVotes / votes.TotalVotes) * 100) + '%';
-
-    var ordinaryVotesStyle = {
-        float: 'left',
-        height: 40,
-        width: ordinaryVotesWidth + '%'
-      };
-
-      var postalVotesStyle = {
-          float: 'left',
-              height: 40,
-              width: postalVotesWidth + '%'
-            };
 
     let vote = (
           <div className="votes-bar-container">
@@ -73,3 +59,8 @@ export class ResultTwoPartyPreferredByCandidate extends Component {
 }
 
 export default ResultTwoPartyPreferredByCandidate;
+
+ResultTwoPartyPreferredByCandidate.propTypes = {
+  candidate: React.PropTypes.object
+
+};

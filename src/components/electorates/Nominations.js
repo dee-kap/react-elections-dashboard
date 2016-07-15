@@ -16,12 +16,10 @@ export class Nominations extends Component {
   }
 
   getNominations() {
-    // get nominations
     $.get('https://elec-960cb.firebaseio.com/housecandidates.json', (data) => {
 
       let filteredMembers = data.filter((member) => {
         return member.DivisionID == this.props.division.DivisionId;
-
       });
 
       this.setState({nominations: filteredMembers});
@@ -33,7 +31,7 @@ export class Nominations extends Component {
 
     const members = this.state.nominations.map((candidate, index) => {
       return(
-        <li className="list-group-item">
+        <li key={index} className="list-group-item">
           <div className="media">
             <div className="media-body">
               <div className="col-md-4 electorate-candidate-container">
@@ -47,7 +45,6 @@ export class Nominations extends Component {
             </div>
           </div>
         </li>
-
       );
 
     });
@@ -61,5 +58,9 @@ export class Nominations extends Component {
     );
   }
 }
+
+Nominations.propTypes = {
+  division: React.PropTypes.object
+};
 
 export default Nominations;

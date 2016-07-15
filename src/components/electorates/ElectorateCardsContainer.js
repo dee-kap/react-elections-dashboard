@@ -21,5 +21,9 @@ export class ElectorateCardsContainer extends Component {
   }
 }
 
+ElectorateCardsContainer.propTypes =  {
+  electorates: React.PropTypes.array
+};
+
 
 export default ElectorateCardsContainer;

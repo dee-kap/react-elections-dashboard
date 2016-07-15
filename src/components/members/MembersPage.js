@@ -52,11 +52,11 @@ export class MembersPage extends Component {
 		return (
 			<div>
         
-        <BootstrapTable options={options} data={this.state.members} paginationSize="25" striped={true} hover={true} pagination={true} search={true}>
-          <TableHeaderColumn dataField="GivenNm" isKey={true} dataSort={true}>Given Name</TableHeaderColumn>
-          <TableHeaderColumn dataField="Surname" dataFormat={this.nameFormatter} dataSort={true}>Surame</TableHeaderColumn>
-          <TableHeaderColumn dataField="StateAb" dataSort={true}>State</TableHeaderColumn>
-          <TableHeaderColumn dataField="PartyNm" dataSort={true}>Party</TableHeaderColumn>
+        <BootstrapTable options={options} data={this.state.members} paginationSize="25" striped hover pagination search>
+          <TableHeaderColumn dataField="GivenNm" isKey dataSort>Given Name</TableHeaderColumn>
+          <TableHeaderColumn dataField="Surname" dataFormat={this.nameFormatter} dataSort>Surame</TableHeaderColumn>
+          <TableHeaderColumn dataField="StateAb" dataSort>State</TableHeaderColumn>
+          <TableHeaderColumn dataField="PartyNm" dataSort>Party</TableHeaderColumn>
         </BootstrapTable>
 
       </div>

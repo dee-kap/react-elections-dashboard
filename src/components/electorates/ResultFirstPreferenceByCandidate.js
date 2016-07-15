@@ -61,4 +61,11 @@ export class ResultFirstPreferenceByCandidate extends Component {
   }
 }
 
+ResultFirstPreferenceByCandidate.propTypes = {
+  candidate: React.PropTypes.object
+
+};
+
 export default ResultFirstPreferenceByCandidate;
+
+

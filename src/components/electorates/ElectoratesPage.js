@@ -41,12 +41,10 @@ export class ElectoralsPage extends Component {
   }
 
   onDisplayCards() {
-    console.log('onDisplayCards');
     this.setState({displayCards: true});
   }
 
   onDisplayTable() {
-    console.log('onDisplayTable');
     this.setState({displayCards: false});
   }
 

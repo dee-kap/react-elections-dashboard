@@ -6,7 +6,6 @@ import ElectorateCardsContainer from './ElectorateCardsContainer';
 export class ElectoratesToolbar extends Component {
 
   render() {
-
     return (
       <div>
         <ElectorateSelector onStateSelect={this.props.onStateSelect} 
@@ -28,9 +27,17 @@ export class ElectoratesToolbar extends Component {
 
       </div>
     );
-
   }
 
 }
+
+ElectoratesToolbar.propTypes =  {
+  electorates: React.PropTypes.array,
+  onElectorateSelect: React.PropTypes.func,
+  selectedState: React.PropTypes.string,
+  onDisplayCards: React.PropTypes.func,
+  onDisplayTable: React.PropTypes.func,
+  onStateSelect: React.PropTypes.func
+};
 
 export default ElectoratesToolbar;

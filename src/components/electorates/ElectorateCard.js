@@ -36,3 +36,8 @@ export class ElectorateCard extends Component {
 }
 
 export default ElectorateCard;
+
+ElectorateCard.propTypes = {
+  electorate: React.PropTypes.object
+
+};
