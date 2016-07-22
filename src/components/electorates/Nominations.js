@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ResultFirstPreferenceByCandidate from './ResultFirstPreferenceByCandidate';
 import ResultTwoPartyPreferredByCandidate from './ResultTwoPartyPreferredByCandidate';
-
+import 'whatwg-fetch';
 
 export class Nominations extends Component {
 
@@ -16,15 +16,16 @@ export class Nominations extends Component {
   }
 
   getNominations() {
-    $.get('https://elec-960cb.firebaseio.com/housecandidates.json', (data) => {
+    fetch('https://elec-960cb.firebaseio.com/housecandidates.json')
+      .then((response) => {
+        return response.json();
+      }).then((data) => {
+        let filteredMembers = data.filter((member) => {
+          return member.DivisionID == this.props.division.DivisionId;
+        });
+        this.setState({nominations: filteredMembers});
 
-      let filteredMembers = data.filter((member) => {
-        return member.DivisionID == this.props.division.DivisionId;
       });
-
-      this.setState({nominations: filteredMembers});
-    });
-
   }
 
   render() {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'whatwg-fetch';
 
 export class ResultTwoPartyPreferredByCandidate extends Component {
   constructor(props) {
@@ -12,16 +13,18 @@ export class ResultTwoPartyPreferredByCandidate extends Component {
   }
 
   getVotes() {
-    $.get('https://elec-960cb.firebaseio.com/housetwopartyprefresults.json', (data) => {
-
-      data.forEach((value, index) => {
+    fetch('https://elec-960cb.firebaseio.com/housetwopartyprefresults.json')
+      .then((response) => {
+        return response.json();
+      }).then((data) => {
+        data.forEach((value, index) => {
         if(value.CandidateID == this.props.candidate.CandidateID) {
           this.setState({votes: value});
           return;
         }
       });
 
-    });
+      });
   }
 
 

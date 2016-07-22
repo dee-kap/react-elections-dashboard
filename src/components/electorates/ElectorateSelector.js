@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Dropdown, SplitButton, MenuItem } from 'react-bootstrap';
+import 'whatwg-fetch';
 
 export class ElectorateSelector extends Component {
 
@@ -9,17 +10,20 @@ export class ElectorateSelector extends Component {
   }
 
   getElectorates(state) {
-    $.get('https://elec-960cb.firebaseio.com/electorates.json', (data) => {
+    fetch('https://elec-960cb.firebaseio.com/electorates.json')
+      .then((response) => {
+        return response.json();
+      }).then((data) => {
+        if(state) {
+          let filteredElectorates = data.filter((item) => {
+            return item.StateAb === state;
+          });
+          this.setState({electorates: filteredElectorates});
+        } else {
+          this.setState({electorates: data});
+        }
 
-      if(state) {
-        let filteredElectorates = data.filter((item) => {
-          return item.StateAb === state;
-        });
-        this.setState({electorates: filteredElectorates});
-      } else {
-        this.setState({electorates: data});
-      }
-    });
+      });
   }
 
 

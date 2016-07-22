@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import string from 'string';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+import 'whatwg-fetch';
 
 export class MembersPage extends Component {
 
@@ -17,19 +18,22 @@ export class MembersPage extends Component {
   }
 
   getMembers(search) {
-    $.get('https://elec-960cb.firebaseio.com/housecandidates.json', (data) => {
-      if(!search) {
-        this.setState({members: data});
-      } else if(search.length > 1) {
-        search = search.toLowerCase();
-        let members = data.filter((value, index) => {
-          if(value.GivenNm.toLowerCase().startsWith(search) || value.Surname.toLowerCase().startsWith(search)) {
-            return value;
-          }
+    fetch('https://elec-960cb.firebaseio.com/housecandidates.json')
+      .then((response) => {
+        return response.json();
+      }).then((data) => {
+        if(!search) {
+          this.setState({members: data});
+        } else if(search.length > 1) {
+          search = search.toLowerCase();
+          let members = data.filter((value, index) => {
+            if(value.GivenNm.toLowerCase().startsWith(search) || value.Surname.toLowerCase().startsWith(search)) {
+              return value;
+            }
         });
         this.setState({members: members});
-      }
-    });
+        }
+      });
   }
 
   onSearchTextChange(event) {

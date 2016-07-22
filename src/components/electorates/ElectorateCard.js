@@ -18,7 +18,6 @@ export class ElectorateCard extends Component {
   render() {
     let electorate = this.props.electorate;
 
-
     return (
       <div className="col-md-4">
         <div className="panel panel-info pointer" onClick={()=>{this.goToElectorate(electorate.StateAb, electorate.DivisionNm, electorate.DivisionId)}}>
@@ -29,7 +28,6 @@ export class ElectorateCard extends Component {
             Voter Enrolment: {electorate.Enrolment}
           </div>
         </div>
-        
       </div>
     );
   }

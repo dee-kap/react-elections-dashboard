@@ -3,7 +3,7 @@ import ElectoratesTable from './ElectoratesTable';
 import ElectoratesToolbar from './ElectoratesToolbar';
 import ElectorateSelector from './ElectorateSelector';
 import ElectorateCardsContainer from './ElectorateCardsContainer';
-
+import 'whatwg-fetch';
 
 export class ElectoralsPage extends Component {
 
@@ -17,17 +17,20 @@ export class ElectoralsPage extends Component {
   }
 
   getElectorates(state) {
-    $.get('https://elec-960cb.firebaseio.com/electorates.json', (data) => {
+    fetch('https://elec-960cb.firebaseio.com/electorates.json')
+      .then((response) => {
+        return response.json();
+      }).then((data) => {
+        if(state) {
+          let filteredElectorates = data.filter((item) => {
+            return item.StateAb === state;
+          });
+          this.setState({electorates: filteredElectorates});
+        } else {
+          this.setState({electorates: data});
+        }
 
-      if(state) {
-        let filteredElectorates = data.filter((item) => {
-          return item.StateAb === state;
-        });
-        this.setState({electorates: filteredElectorates});
-      } else {
-        this.setState({electorates: data});
-      }
-    });
+      });
   }
 
   onStateSelect(state) {

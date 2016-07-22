@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'whatwg-fetch';
 
 export class ResultFirstPreferenceByCandidate extends Component {
 
@@ -13,16 +14,18 @@ export class ResultFirstPreferenceByCandidate extends Component {
   }
 
   getVotes() {
-    $.get('https://elec-960cb.firebaseio.com/housefirstprefresults.json', (data) => {
-
-      data.forEach((value, index) => {
+    fetch('https://elec-960cb.firebaseio.com/housefirstprefresults.json')
+      .then((response) => {
+        return response.json();
+      }).then((data) => {
+        data.forEach((value, index) => {
         if(value.CandidateID == this.props.candidate.CandidateID) {
           this.setState({votes: value});
           return;
         }
       });
 
-    });
+      });
   }
 
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nominations from './Nominations';
 import ElectorateSelector from './ElectorateSelector';
 import ResultsLegend from '../common/ResultsLegend';
+import 'whatwg-fetch';
 
 export class ElectoratePage extends Component {
 
@@ -16,17 +17,21 @@ export class ElectoratePage extends Component {
   }
 
   getDivisionDetails() {
-    $.get('https://elec-960cb.firebaseio.com/electorates.json', (data) => {
-      let division = {};
-      let divisionId = this.props.params.divisionId;
-      data.forEach((value, index) => {
-        if(value.DivisionId == divisionId) {
-          division = value;
-          return;
-        }
+    fetch('https://elec-960cb.firebaseio.com/electorates.json')
+      .then((response) => {
+        return response.json();
+      }).then((data) => {
+        let division = {};
+        let divisionId = this.props.params.divisionId;
+        data.forEach((value, index) => {
+          if(value.DivisionId == divisionId) {
+            division = value;
+            return;
+          }
+        });
+        this.setState({division: division});
+
       });
-      this.setState({division: division});
-    });
   }
 
   render() {
